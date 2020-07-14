@@ -22,11 +22,7 @@ big_ass_number = '''
 05886116467109405077541002256983155200055935729725
 71636269561882670428252483600823257530420752963450
 '''
-big_ass_list = []
-
-for c in big_ass_number:
-    if c.isnumeric():
-        big_ass_list.append(int(c))
+big_ass_list = [int(c) for c in big_ass_number if c.isnumeric()]  
 
 largest_product = 0
 
