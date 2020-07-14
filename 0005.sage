@@ -11,7 +11,7 @@ product = 1
 # ensure that this is done.
 for factor, count in all_factors:
     if not already_considered[factor]:
-        product *= factor ** count
+        product *= factor ^ count
         already_considered[factor] = True
 
 print(product)
